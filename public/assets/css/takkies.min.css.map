@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,AAAA,CACA,MAAM,CAAC,CAAC,CACR,OAAO,CAAC,CACZ,CAAC",
-    "sources": [
-        "../scss/takkies.scss"
-    ],
-    "names": [],
-    "file": "takkies.min.css"
-}

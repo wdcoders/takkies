@@ -1,0 +1,24 @@
+// border radius
+@mixin border-radius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+
+// transition properties
+@mixin transition($value){
+    transition:$value;
+    -webkit-transition:$value;
+    -moz-transition:$value;
+    -ms-transition:$value;
+    -o-transition:$value;
+}
+
+// transition properties
+@mixin box-shadow($value){
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+}
