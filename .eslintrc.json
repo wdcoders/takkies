@@ -1,37 +1,113 @@
+// {
+//     "env": {
+//         "browser": true,
+//         "es2021": true
+//     },
+//     "extends": [
+//         "react-app",
+//         "eslint:recommended",
+//         "plugin:react/recommended",
+//         "prettier"
+//     ],
+//     "parserOptions": {
+//         "ecmaFeatures": {
+//             "jsx": true
+//         },
+//         "ecmaVersion": 12,
+//         "sourceType": "module"
+//     },
+//     "plugins": [
+//         "react",
+//         "prettier"
+//     ],
+//     "rules": {
+//         "semi":"error",
+//         "prettier/prettier":[
+//             "error",
+//             {
+//                 "printWidth": 80,
+//                 "trailing": "all",
+//                 "jsxSingleQuote": true,
+//                 "singleQuote": true,
+//                 "endOfLine":"auto",
+//                 "useTabs": true
+//             }
+//         ]
+//     }
+// }
+
+
 {
     "env": {
         "browser": true,
         "es2021": true
     },
     "extends": [
-        "react-app",
-        "eslint:recommended",
         "plugin:react/recommended",
-        "prettier"
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
         "ecmaVersion": 12,
-        "sourceType": "module"
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
     },
     "plugins": [
-        "react",
-        "prettier"
+        "react","prettier","immutable"
     ],
     "rules": {
-        "semi":"error",
-        "prettier/prettier":[
+        "max-len": [
             "error",
             {
-                "printWidth": 80,
-                "trailing": "all",
-                "jsxSingleQuote": true,
-                "singleQuote": true,
-                "endOfLine":"auto",
-                "useTabs": true
+                "code": 150
             }
-        ]
+        ],
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "no-console": "warn",
+        "no-empty": 0,
+        "no-var": 0,
+        "useTabs": true,
+        "no-irregular-whitespace":0,
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "no-unused-vars": ["warn", {"vars": "all", "args": "after-used"}],
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "no-underscore-dangle": 0,
+        "linebreak-style": 0,
+        "react/jsx-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "react/prefer-stateless-function": "off",
+        "react/jsx-props-no-spreading": "off",
+        // "immutable-js/no-let":0,
+        "immutable/no-let": 2,
+        "import/prefer-default-export": "off",
+        "class-methods-use-this":["off", { "exceptMethods": ["create"] }],
+        "jsx-a11y/label-has-associated-control": [ 2, {
+            "labelComponents": ["CustomInputLabel"],
+            "labelAttributes": ["label"],
+            "controlComponents": ["CustomInput"],
+            "depth": 3
+        }],
+        "react/no-unescaped-entities": 0
+        // "import/no-cycle": [2, { "ignoreExternal": true }]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+            "extensions": [
+                ".js",
+                ".jsx"
+            ],
+            "moduleDirectory": ["node_modules", "src"]
+            }
+        }
     }
 }

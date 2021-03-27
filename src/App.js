@@ -7,7 +7,7 @@ import './assets/css/takkies.min.css';
 
 import Dashboard from './components/Dashboard';
 import Layout from './components/Layout/Layout';
-import Blank from 'components/Blank';
+import Blank from './components/Blank';
 
 function App() {
 	return (
